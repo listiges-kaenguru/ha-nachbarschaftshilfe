@@ -1,0 +1,6 @@
+# Enthält die (verschlüsselte) echte Webhook-URL – niemals ins Repository.
+# Bei kurzem PIN offline knackbar. Lokal mit setup.html erzeugen.
+payload.js
+
+# Alte Version ohne PIN – Webhook-URL leicht auslesbar
+index_ALT_*.html
