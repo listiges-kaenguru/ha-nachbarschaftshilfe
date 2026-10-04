@@ -26,6 +26,14 @@ per Webhook auslösen können. Der Button erscheint erst nach Eingabe des richti
 - Nach falschen PIN-Eingaben steigt die Wartezeit (1 s, 2 s, 4 s … bis 30 s).
 - Hell-, Dunkel- und Systemmodus lassen sich umschalten; die Wahl wird im Browser gespeichert.
 
+<p>
+  <img src="docs/screenshots/pin-abfrage.png" alt="PIN-Abfrage auf der Hauptseite" width="300">
+  &nbsp;
+  <img src="docs/screenshots/entsperrt.png" alt="Nach richtigem PIN: Button „Jetzt auslösen“" width="300">
+</p>
+
+*Links: PIN-Abfrage. Rechts: nach Eingabe des richtigen PINs.*
+
 ## Dateien
 
 | Datei | Zweck | Veröffentlichen |
@@ -39,6 +47,7 @@ per Webhook auslösen können. Der Button erscheint erst nach Eingabe des richti
 | `setup.html`, `setup.js` | Werkzeug zum Erzeugen von `payload.js` | nein, nur lokal |
 | `index_ALT_ohne-PIN_NICHT-HOCHLADEN.html` | Alte Version ohne PIN, URL leicht auslesbar | **niemals** |
 | `README.md` | Diese Datei | nein |
+| `docs/screenshots/` | Bildschirmfotos für diese Datei | nein |
 | `LICENSE` | Lizenztext (GPLv3) | nein |
 
 ## PIN oder Webhook-URL ändern
@@ -47,6 +56,8 @@ per Webhook auslösen können. Der Button erscheint erst nach Eingabe des richti
 2. Webhook-URL und neuen PIN eingeben, auf „Verschlüsseln“ klicken.
 3. „payload.js herunterladen“ und die vorhandene `payload.js` damit ersetzen.
 4. Die neue `payload.js` auf den Server hochladen.
+
+<img src="docs/screenshots/einrichtung.png" alt="Einrichtungsseite setup.html" width="350">
 
 `payload.js` ist per `.gitignore` vom Repository ausgeschlossen. Auch verschlüsselt
 gehört sie nicht in ein öffentliches Repository, da ein kurzer PIN offline erraten
