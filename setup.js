@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 // Verschlüsselt die Webhook-URL mit einem aus dem PIN abgeleiteten Schlüssel.
 // Läuft komplett lokal im Browser, es wird nichts gesendet.
 

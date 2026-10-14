@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 // Farbschema: Hell / Dunkel / System.
 // Wird im <head> ohne defer geladen, damit das gespeicherte Schema vor dem
 // ersten Rendern gesetzt ist (verhindert Aufblitzen).

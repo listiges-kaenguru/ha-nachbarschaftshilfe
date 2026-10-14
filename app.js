@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 // Die Webhook-URL ist mit AES-GCM verschlüsselt (PAYLOAD aus payload.js);
 // der Schlüssel wird per PBKDF2 aus dem PIN abgeleitet. Weder URL noch PIN
 // stehen im Quelltext. payload.js erzeugst du lokal mit setup.html.

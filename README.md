@@ -48,7 +48,7 @@ per Webhook auslösen können. Der Button erscheint erst nach Eingabe des richti
 | `index_ALT_ohne-PIN_NICHT-HOCHLADEN.html` | Alte Version ohne PIN, URL leicht auslesbar | **niemals** |
 | `README.md` | Diese Datei | nein |
 | `docs/screenshots/` | Bildschirmfotos für diese Datei | nein |
-| `LICENSE` | Lizenztext (GPLv3) | nein |
+| `LICENSE` | Lizenztext (AGPLv3) | nein |
 
 ## PIN oder Webhook-URL ändern
 
@@ -92,10 +92,14 @@ Die Webhook-URL steht in Home Assistant in der jeweiligen Automation beim Webhoo
 Copyright (C) 2026 listiges-kaenguru
 
 Dieses Programm ist freie Software: Sie können es unter den Bedingungen der
-GNU General Public License, Version 3 oder (nach Ihrer Wahl) jeder späteren Version,
-wie von der Free Software Foundation veröffentlicht, weitergeben und/oder ändern.
+GNU Affero General Public License, Version 3 oder (nach Ihrer Wahl) jeder späteren
+Version, wie von der Free Software Foundation veröffentlicht, weitergeben und/oder ändern.
 
 Dieses Programm wird in der Hoffnung bereitgestellt, dass es nützlich ist, jedoch
 **OHNE JEDE GEWÄHRLEISTUNG**, sogar ohne die implizite Gewährleistung der
 MARKTFÄHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK. Details siehe
-[LICENSE](LICENSE) bzw. <https://www.gnu.org/licenses/gpl-3.0.html>.
+[LICENSE](LICENSE) bzw. <https://www.gnu.org/licenses/agpl-3.0.html>.
+
+Beide Seiten verlinken in der Fußzeile auf den Quelltext. Wer eine **veränderte
+Fassung** öffentlich betreibt, muss diesen Link auf den eigenen, veränderten
+Quelltext zeigen lassen (AGPL, Abschnitt 13).
