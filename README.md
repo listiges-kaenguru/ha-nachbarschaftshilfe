@@ -47,6 +47,7 @@ per Webhook auslösen können. Der Button erscheint erst nach Eingabe des richti
 | `setup.html`, `setup.js` | Werkzeug zum Erzeugen von `payload.js` | nein, nur lokal |
 | `index_ALT_ohne-PIN_NICHT-HOCHLADEN.html` | Alte Version ohne PIN, URL leicht auslesbar | **niemals** |
 | `README.md` | Diese Datei | nein |
+| `CHANGELOG.md`, `IDEEN.md`, `CLAUDE.md`, `CONTRIBUTING.md` | Änderungen, offene Punkte, Hinweise für Claude Code, Mitwirken | nein |
 | `docs/screenshots/` | Bildschirmfotos für diese Datei | nein |
 | `LICENSE` | Lizenztext (AGPLv3) | nein |
 
