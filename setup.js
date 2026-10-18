@@ -4,6 +4,9 @@
 // Läuft komplett lokal im Browser, es wird nichts gesendet.
 
 const ITERATIONS = 600000;
+// payload.js liegt öffentlich auf dem Server: Ein kurzer PIN ließe sich dort offline durchprobieren (4 Ziffern in
+// rund einer Stunde, trotz 600 000 Runden). Ab 10 Zeichen ist das praktisch ausgeschlossen, mit Wörtern erst recht.
+const MIN_PIN = 10;
 const toB64 = bytes => btoa(String.fromCharCode(...bytes));
 
 async function encrypt(url, pin) {
@@ -38,6 +41,13 @@ form.addEventListener('submit', async (ev) => {
   ev.preventDefault();
   pin2.removeAttribute('aria-invalid');
 
+  if (pin.value.length < MIN_PIN) {
+    pin.setAttribute('aria-invalid', 'true');
+    showStatus('error', `Der PIN muss mindestens ${MIN_PIN} Zeichen haben (z. B. drei Wörter mit Bindestrich).`);
+    pin.focus();
+    return;
+  }
+  pin.removeAttribute('aria-invalid');
   if (pin.value !== pin2.value) {
     pin2.setAttribute('aria-invalid', 'true');
     showStatus('error', 'Die PINs stimmen nicht überein.');

@@ -44,9 +44,9 @@
                placeholder="https://…/api/webhook/…" spellcheck="false" />
 
         <label class="field" for="pin">PIN</label>
-        <input class="input pin" id="pin" type="password" required minlength="4"
+        <input class="input pin" id="pin" type="password" required minlength="10"
                aria-describedby="pinHint" />
-        <p class="hint" id="pinHint">Mindestens 4 Zeichen. Je länger, desto sicherer; Buchstaben und Zahlen sind erlaubt.</p>
+        <p class="hint" id="pinHint">Mindestens 10 Zeichen, z. B. drei Wörter mit Bindestrich. Kürzere PINs ließen sich offline erraten, weil <code>payload.js</code> öffentlich auf dem Server liegt.</p>
 
         <label class="field" for="pin2">PIN wiederholen</label>
         <input class="input pin" id="pin2" type="password" required />

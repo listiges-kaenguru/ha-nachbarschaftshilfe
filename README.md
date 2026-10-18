@@ -54,7 +54,7 @@ per Webhook auslösen können. Der Button erscheint erst nach Eingabe des richti
 ## PIN oder Webhook-URL ändern
 
 1. `setup.html` lokal im Browser öffnen (Doppelklick genügt).
-2. Webhook-URL und neuen PIN eingeben, auf „Verschlüsseln“ klicken.
+2. Webhook-URL und neuen PIN eingeben (mindestens 10 Zeichen), auf „Verschlüsseln“ klicken.
 3. „payload.js herunterladen“ und die vorhandene `payload.js` damit ersetzen.
 4. Die neue `payload.js` auf den Server hochladen.
 
@@ -78,9 +78,10 @@ Die Webhook-URL steht in Home Assistant in der jeweiligen Automation beim Webhoo
 
 - **Wer den PIN kennt, kann die URL sehen** (z. B. im Netzwerk-Tab der Entwicklerwerkzeuge)
   und den Webhook dann auch ohne die Seite aufrufen.
-- **Kurze Zahlen-PINs sind knackbar.** Die Wartezeit schützt nur auf der Seite selbst.
-  Wer `payload.js` herunterlädt, kann offline alle PINs durchprobieren. Ein längeres
-  Passwort (z. B. 3–4 zufällige Wörter) macht das praktisch unmöglich.
+- **Kurze PINs sind knackbar.** Die Wartezeit schützt nur auf der Seite selbst.
+  Wer `payload.js` herunterlädt, kann offline alle PINs durchprobieren: Ein 4-stelliger
+  Zahlen-PIN fällt auf einem normalen Rechner in rund einer Stunde, mit Grafikkarte schneller.
+  `setup.html` verlangt deshalb mindestens 10 Zeichen. Am sichersten sind 3–4 zufällige Wörter.
 - **Nicht dauerhaft betreiben.** Die Seite nur für den Zeitraum veröffentlichen, in dem
   sie tatsächlich gebraucht wird.
 - **Nach Ende der Nutzung** die Seite offline nehmen und in Home Assistant die
