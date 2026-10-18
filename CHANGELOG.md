@@ -6,7 +6,18 @@ Das Format basiert auf [Keep a Changelog](https://keepachangelog.com/de/1.1.0/).
 
 ## [Unveröffentlicht]
 
-_Nichts._
+### Sicherheit
+
+- `setup.html` verlangt einen PIN mit mindestens 10 Zeichen (bisher 4). `payload.js` liegt öffentlich auf dem Server;
+  ein 4-stelliger Zahlen-PIN ließ sich dort offline in rund einer Stunde durchprobieren. Hinweistext, README und
+  Screenshot angepasst. Eine schon eingerichtete `payload.js` funktioniert weiter, sollte aber mit einem längeren PIN
+  neu erzeugt werden.
+
+### Intern
+
+- Browsertest `tests/browser.mjs` (läuft mit `~/projects/testumgebung/pt test`): Einrichtung, falscher und richtiger
+  PIN, manipulierte `payload.js`, fehlende Einrichtung; der Webhook ist gemockt und wird genau einmal per POST an die
+  entschlüsselte Adresse aufgerufen.
 
 ## 2026-10-14
 
