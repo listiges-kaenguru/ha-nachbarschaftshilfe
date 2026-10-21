@@ -19,6 +19,7 @@ Das Format basiert auf [Keep a Changelog](https://keepachangelog.com/de/1.1.0/).
   PIN, manipulierte `payload.js`, fehlende Einrichtung; der Webhook ist gemockt und wird genau einmal per POST an die
   entschlüsselte Adresse aufgerufen.
 - CHANGELOG allgemein formuliert, ohne lokalen Pfad zur eigenen Testumgebung; bewusste Testlücke in `CLAUDE.md` notiert.
+- Testskripte nennen in Meldungen und Kommentaren keinen lokalen Pfad mehr, sondern verweisen auf einen Container mit den Testwerkzeugen und die README.
 
 ## 2026-10-14
 

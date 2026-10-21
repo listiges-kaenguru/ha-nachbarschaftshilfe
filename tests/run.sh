@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Browsertest (Einrichtung, Entsperren, Auslösen mit gemocktem Webhook). Läuft in der Testumgebung: ~/projects/testumgebung/pt test
+# Browsertest (Einrichtung, Entsperren, Auslösen mit gemocktem Webhook). Braucht Node, Playwright und Chromium (Pfad in $PW)
 set -uo pipefail
 cd "$(dirname "$0")/.."
 PORT="${TEST_PORT:-8091}"

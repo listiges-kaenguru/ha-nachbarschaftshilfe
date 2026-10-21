@@ -1,9 +1,9 @@
 // Browsertest: Einrichtung (setup.html) und Auslösen (index.html) mit gemocktem Home-Assistant-Webhook.
-// payload.js wird im Test erzeugt und über page.route ausgeliefert, nie gespeichert. Läuft in der Testumgebung
-// (Playwright und Chromium aus dem Image, Pfad in $PW); tests/run.sh startet den Webserver.
+// payload.js wird im Test erzeugt und über page.route ausgeliefert, nie gespeichert. Braucht Playwright
+// und Chromium (Pfad zur package.json in $PW); tests/run.sh startet den Webserver.
 import { createRequire } from 'node:module';
 
-if (!process.env.PW) { console.error('$PW fehlt – in der Testumgebung ausführen: ~/projects/testumgebung/pt test'); process.exit(2); }
+if (!process.env.PW) { console.error('$PW fehlt – zeigt auf die package.json eines installierten Playwright (siehe README)'); process.exit(2); }
 const { chromium } = createRequire(process.env.PW)('playwright');
 const URL = process.env.APP_URL || 'http://localhost:8091/';
 const WEBHOOK = 'https://ha.example.invalid/api/webhook/test-id-123';
