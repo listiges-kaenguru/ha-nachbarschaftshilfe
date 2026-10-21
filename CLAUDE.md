@@ -17,4 +17,6 @@ AES-GCM-verschlüsselt in `payload.js` (Schlüssel per PBKDF2 aus dem PIN). Öff
   `.gitignore` ausgeschlossen. `index_ALT_ohne-PIN_NICHT-HOCHLADEN.html` bleibt lokal und wird nie veröffentlicht.
 - Sicherheitsmechanismen nicht aufweichen (PBKDF2-Iterationen, steigende Wartezeit nach Fehlversuchen).
 - Keine externen Ressourcen; die Seite braucht HTTPS (Web Crypto).
+- Bewusste Testlücke: Der Webhook ist im Browsertest nur gemockt; den echten Aufruf an Home Assistant prüft niemand
+  automatisch.
 - Ändert sich, welche Dateien veröffentlicht werden, die Tabelle „Dateien“ in der README anpassen.
